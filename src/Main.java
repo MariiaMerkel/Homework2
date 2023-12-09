@@ -86,10 +86,9 @@ public class Main {
         int newSalaryDenis = (int) Math.ceil(83_690 * 1.1f);
         int newSalaryKristina = (int) Math.ceil(76_230 * 1.1f);
         int incrYaerlySalaryMasha = newSalaryMasha * 12 - salaryMasha * 12;
-        int incrYaerlySalaryDenis = newSalaryDenis * 12 - salaryDenis * 12;
-        int incrYaerlySalaryKristina = newSalaryKristina * 12 - salaryKristina * 12;
+        int incrYaerlySalaryDenis = 12 * (newSalaryDenis - salaryDenis);
         System.out.println("\nМаша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + incrYaerlySalaryMasha + " рублей");
         System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + incrYaerlySalaryDenis + " рублей");
-        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + incrYaerlySalaryKristina + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + 12 * (newSalaryKristina - salaryKristina) + " рублей");
     }
 }
